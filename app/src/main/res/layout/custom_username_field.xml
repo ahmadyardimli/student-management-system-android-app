@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    >
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:drawableLeft="@drawable/user_icon"
+        android:drawablePadding="8dp"
+        />
+
+
+    <View
+        android:id="@+id/bottomTint"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/usernameEditText"
+        android:background="@color/sms_blue_darker"
+        />
+</RelativeLayout>

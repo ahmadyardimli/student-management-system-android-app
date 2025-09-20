@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Additional dimensions if needed -->
+    <dimen name="profile_image_size">160dp</dimen>
+    <dimen name="dialog_password_change_text_size">35sp</dimen>
+</resources>

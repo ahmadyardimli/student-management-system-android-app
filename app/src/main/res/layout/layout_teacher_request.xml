@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/teacherUsernameInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <include
+        android:id="@+id/teacherPasswordInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/teacherUsernameInclude"
+        />
+
+    <include
+        android:id="@+id/teacherEmailInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/teacherPasswordInclude"
+        />
+
+    <include
+        android:id="@+id/userTypeInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/teacherEmailInclude"
+        />
+
+    <include
+        android:id="@+id/userStatusInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/userTypeInclude"
+        />
+
+    <include
+        android:id="@+id/teacherNameInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/userStatusInclude"
+        />
+
+    <include
+        android:id="@+id/teacherSurnameInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/teacherNameInclude"
+        />
+
+
+    <include
+        android:id="@+id/teacherCommunicationSenderStatusInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/teacherSurnameInclude"
+        />
+
+    <include
+        android:id="@+id/teacherSubjectInclude"
+        layout="@layout/multiselect_dropdown_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/teacherCommunicationSenderStatusInclude"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppButtonStyle"  >
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+<!--        <item name="android:padding">15dp</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
+    <style name="ErrorMessageTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/error_message</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NavHeaderTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/sms_blue_darker</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CategoryButtonStyle"  >
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_category_selector</item>
+    </style>
+
+    <style name="requestTextViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textColor">@color/sms_blue_darker</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">Label:</item>
+    </style>
+    
+    <style name="activeCheckBox">
+        <item name="colorAccent">@color/sms_blue</item>
+        <item name="android:textColorSecondary">@color/sms_yellow</item>
+    </style>
+
+    <style name="DigitEditText">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/background_digit_adder</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+</resources>

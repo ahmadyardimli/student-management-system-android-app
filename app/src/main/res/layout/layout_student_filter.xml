@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/filterParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    app:flexWrap="wrap"
+    app:justifyContent="space_around">
+
+    <!-- A button that always remains visible so we can show/hide the filter container -->
+    <Button
+        android:id="@+id/buttonToggleFilters"
+        style="@style/CategoryButtonStyle"
+        app:backgroundTint="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide Filter View"
+        android:layout_margin="0dp"
+        app:layout_wrapBefore="true"
+        />
+
+    <!-- This container holds ALL spinners, invisible spinners, and the reset button -->
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/filterContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexWrap="wrap"
+        app:justifyContent="space_around">
+
+        <!-- Student Type Spinner -->
+        <include
+            android:id="@+id/spinnerStudentType"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
+        <!-- Category Spinner -->
+        <include
+            android:id="@+id/spinnerCategory"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
+        <!-- Foreign Language Spinner -->
+        <include
+            android:id="@+id/spinnerForeignLanguage"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
+        <!-- Section Spinner -->
+        <include
+            android:id="@+id/spinnerSection"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
+        <!-- Group Spinner -->
+        <include
+            android:id="@+id/spinnerGroup"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
+        <!-- Sub Group Spinner -->
+        <include
+            android:id="@+id/spinnerSubGroup"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
+        <!-- Status Spinner -->
+        <include
+            android:id="@+id/spinnerStatus"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
+        <!-- Communication Status Spinner -->
+        <include
+            android:id="@+id/spinnerCommunicationStatus"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
+        <!-- Class Number Spinner -->
+        <include
+            android:id="@+id/spinnerClassNumber"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
+        <!-- Class Letter Spinner -->
+        <include
+            android:id="@+id/spinnerClassLetter"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
+        <!-- Invisible Spinners (to align the last single spinner at the beginning of its line) -->
+        <include
+            android:id="@+id/noUseSpinner"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/noUseSpinner2"
+            layout="@layout/request_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:visibility="invisible" />
+
+        <!-- RESET Button -->
+        <Button
+            android:id="@+id/buttonResetFilters"
+            style="@style/AppButtonStyle"
+            app:backgroundTint="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_filters"
+            android:layout_margin="4dp"/>
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+</com.google.android.flexbox.FlexboxLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentManagementSystemAndroidApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.EntryActivity"
+            android:exported="true"
+            android:theme="@style/Theme.StudentManagementSystemAndroidApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.user_activities.student_activities.StudentChatActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".activities.user_activities.student_activities.StudentExamsActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".activities.user_activities.student_activities.StudentProfileActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".activities.user_activities.student_activities.StudentPanelActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".activities.user_activities.student_activities.BaseStudentActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".activities.user_activities.teacher_activites.TeacherProfileActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".activities.user_activities.teacher_activites.TeacherChatActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".activities.user_activities.teacher_activites.TeacherStudentEvaluationActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".activities.user_activities.teacher_activites.TeacherStudentInfoActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".activities.user_activities.teacher_activites.TeacherPanelActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".activities.user_activities.teacher_activites.BaseTeacherActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".activities.admin_activities.users.students.ViewAndUpdateStudentActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.ClassLettersActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.ClassNumbersActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.StudentTypesActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.users.students.StudentsActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.users.teachers.ViewAndUpdateTeacherActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.users.teachers.TeachersActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.SubjectsActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.users.MainUserActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.UserTypesActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.SubGroupsActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.GroupsActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.CategoriesActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.SectionsActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.UserAndExamDetailsBaseActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.ForeignLanguagesActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.AnotherActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.UserActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.admins.BaseAdminActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.userandexamdetails.UserAndExamDetailsActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.admin_activities.admins.AdminPanelActivity"
+            android:exported="false"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.auth_activities.LoginActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            />
+<!--        <activity-->
+<!--            android:name=".activities.auth_activities.LoginActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+    </application>
+
+</manifest>

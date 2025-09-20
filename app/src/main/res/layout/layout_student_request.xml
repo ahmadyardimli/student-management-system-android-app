@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Username Field -->
+    <include
+        android:id="@+id/studentUsernameInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Password Field -->
+    <include
+        android:id="@+id/studentPasswordInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentUsernameInclude" />
+
+    <!-- Email Field -->
+    <include
+        android:id="@+id/studentEmailInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentPasswordInclude" />
+
+    <!-- User Type Spinner -->
+    <include
+        android:id="@+id/userTypeInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentEmailInclude" />
+
+    <!-- User Status Spinner -->
+    <include
+        android:id="@+id/userStatusInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/userTypeInclude" />
+
+    <!-- Student Name Field -->
+    <include
+        android:id="@+id/studentNameInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/userStatusInclude" />
+
+    <!-- Student Surname Field -->
+    <include
+        android:id="@+id/studentSurnameInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentNameInclude" />
+
+    <!-- Student Code Field -->
+    <include
+        android:id="@+id/studentCodeInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentSurnameInclude" />
+
+    <!-- Student Type Spinner -->
+    <include
+        android:id="@+id/studentTypeInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentCodeInclude" />
+
+    <!-- Student Group Spinner -->
+    <include
+        android:id="@+id/studentGroupInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentTypeInclude" />
+
+    <!-- Student Sub Group Spinner -->
+    <include
+        android:id="@+id/studentSubGroupInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentGroupInclude" />
+
+    <!-- Student Category Spinner -->
+    <include
+        android:id="@+id/studentCategoryInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentSubGroupInclude" />
+
+    <!-- Student Section Spinner -->
+    <include
+        android:id="@+id/studentSectionInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentCategoryInclude" />
+
+    <!-- Student Foreign Language Spinner -->
+    <include
+        android:id="@+id/studentForeignLanguageInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentSectionInclude" />
+
+    <!-- Student Father Name Field -->
+    <include
+        android:id="@+id/studentFatherNameInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentForeignLanguageInclude" />
+
+    <!-- Student Mobile Phone Field -->
+    <include
+        android:id="@+id/studentMobilePhoneInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentFatherNameInclude" />
+
+    <!-- Student School Class Code Field -->
+    <include
+        android:id="@+id/studentSchoolClassCodeInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentMobilePhoneInclude" />
+
+    <!-- Student Address Field -->
+    <include
+        android:id="@+id/studentAddressInclude"
+        layout="@layout/request_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentSchoolClassCodeInclude" />
+
+    <!-- Student Class Number Spinner -->
+    <include
+        android:id="@+id/studentClassNumberInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentAddressInclude" />
+
+    <!-- Student Class Letter Spinner -->
+    <include
+        android:id="@+id/studentClassLetterInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentClassNumberInclude" />
+
+    <!-- Student Communication Sender Status Spinner -->
+    <include
+        android:id="@+id/studentCommunicationSenderStatusInclude"
+        layout="@layout/request_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentClassLetterInclude" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

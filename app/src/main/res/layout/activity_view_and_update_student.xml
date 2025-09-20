@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    tools:context=".activities.admin_activities.users.students.ViewAndUpdateStudentActivity">
+
+    <!-- Scrollable container for all fields -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/activity_view_and_update_student_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Username -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_username"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Password  -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_password"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Email -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_email"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- User Status -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_user_status"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Created At (non-editable) -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_creation_time"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Updated At (non-editable) -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_update_time"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Name -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_name"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Surname -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_surname"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Student Code -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_student_code"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Student Type -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_student_type"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Group -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_group"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Sub Group -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_sub_group"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Category -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_category"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Section -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_section"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Foreign Language -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_foreign_language"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Father Name -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_father_name"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Mobile Phone -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_mobile_phone"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- School Class Code -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_school_class_code"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Address -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_address"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Class Number -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_class_number"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Class Letter -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_class_letter"
+                layout="@layout/layout_view_and_update_user_item" />
+
+            <!-- Communication Status -->
+            <include
+                android:id="@+id/layout_view_and_update_user_item_communication_status"
+                layout="@layout/layout_view_and_update_user_item" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Navigation View -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

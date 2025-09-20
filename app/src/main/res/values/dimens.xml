@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Additional dimensions if needed -->
+    <dimen name="profile_image_size">80dp</dimen>
+    <dimen name="base_menu_item_text_size">5sp</dimen>
+    <dimen name="base_menu_item_padding">8dp</dimen>
+    <dimen name="dialog_password_change_text_size">18sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
