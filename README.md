@@ -358,8 +358,8 @@ Use `LogoutManager.logout(activity)`:
 
 ## License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ahmadyardimli/student-management-system-android-app/blob/main/LICENSE)
+This project is licensed under the **MIT License** — see the [LICENSE](https://github.com/ahmadyardimli/student-management-system-android-app/blob/main/LICENSE) file for details.
 
 ---
 
@@ -471,6 +471,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 <img src="docs/screenshots/5364020472162940595.jpg" alt="5364020472162940595" width="260" style="margin:6px;" />
 <img src="docs/screenshots/5364020472162940596.jpg" alt="5364020472162940596" width="260" style="margin:6px;" />
 </p>
+
 
 
 
