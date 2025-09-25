@@ -358,7 +358,8 @@ Use `LogoutManager.logout(activity)`:
 
 ## License
 
-MIT (or your chosen license). Add your `LICENSE` file and badge here.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -470,5 +471,6 @@ MIT (or your chosen license). Add your `LICENSE` file and badge here.
 <img src="docs/screenshots/5364020472162940595.jpg" alt="5364020472162940595" width="260" style="margin:6px;" />
 <img src="docs/screenshots/5364020472162940596.jpg" alt="5364020472162940596" width="260" style="margin:6px;" />
 </p>
+
 
 
